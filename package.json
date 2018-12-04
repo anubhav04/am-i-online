@@ -1,0 +1,29 @@
+{
+    "name": "am-i-online",
+    "version": "1.0.0",
+    "description": "A javascript module to check the internet connectivity periodically to control the flow of app and restrict crashing of application.",
+    "main": "index.js",
+    "keywords": [
+        "internet",
+        "online",
+        "offline",
+        "am-i-online",
+        "network",
+        "connected",
+        "connectivity",
+        "connection",
+        "is",
+        "has",
+        "detect",
+    ],
+    "author": "anubhav.techanthusiast@gmail.com",
+    "license": "MIT",
+    "dependencies": {
+        "dns-socket": "^1.6.1"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anubhav04/am-i-online"
+    },
+}

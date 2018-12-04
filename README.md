@@ -7,7 +7,8 @@ A javascript module to check the internet connectivity periodically to control t
 You can install this module through NPM using the following command in your terminal:
 
 ```bash
-$ npm install internet-available --save
+$ npm install is-app-online --save
+$ yarn add is-app-online
 ```
 # Syntax
 ```javascript
@@ -34,7 +35,7 @@ amIOnline({options})
 am-i-online requires Promises to work correctly. It's easy to use:
 
 ```javascript
-var amIOnline = require("internet-available");
+import amIOnline from 'is-app-online';
 
 // Most easy way
 amIOnline({
@@ -47,20 +48,4 @@ amIOnline({
 }).catch(() => {
     console.log("No internet");
 });
-```
-
-But configurable too (check the docs).
-## Config
-```javascript
-/**
- * Internet available is a very simple method that allows you to check if there's an active
- * internet connection by resolving a DNS address and it's developer friendly.
- *
- * @param {options.timeout} timeout Execution time in milliseconds
- * @param {options.retries} retries Total query attempts made during timeout
- * @param {options.domainName} name Domain to check for connection by default google.com
- * @param {options.port} port Port where the DNS lookup should check by default 53
- * @param {options.host} host DNS Host where lookup should check by default '8.8.8.8' (Google Public DNS)
- * @return {Promise}
- */
 ```

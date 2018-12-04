@@ -1,4 +1,4 @@
-function amIOnline(options) {
+const amIOnline = (options) => {
     // Require dns-socket module from dependencies
     var dns = require('dns-socket');
     options = settings || {};
@@ -34,4 +34,4 @@ function amIOnline(options) {
     });
 }
 
-module.exports = amIOnline;
+export default amIOnline;

@@ -1,14 +1,14 @@
-var internetAvailable = require("./internet-available");
+import amIOnline from 'is-app-online';
 
 // Most easy way
-internetAvailable().then(() => {
+amIOnline().then(() => {
     console.log("Internet available");
 }).catch(() => {
     console.log("No internet");
 });
 
 // Set a timeout and a limit of attempts to check for connection
-internetAvailable({
+amIOnline({
     timeout: 4000,
     retries: 10,
 }).then(() => {
@@ -18,7 +18,7 @@ internetAvailable({
 });
 
 // Make it with a different verification address
-internetAvailable({
+amIOnline({
     timeout: 4000,
     retries: 10,
     domainName: "ourcodeworld.com",

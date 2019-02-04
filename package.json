@@ -1,6 +1,6 @@
 {
     "name": "is-app-online",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "A javascript module to check the internet connectivity periodically to control the flow of app and restrict crashing of application.",
     "main": "index.js",
     "keywords": [
@@ -20,7 +20,8 @@
         "is user online",
         "is internet offline",
         "is user offline",
-        "is network connected"
+        "is network connected",
+        "is app online"
     ],
     "author": "anubhav.techanthusiast@gmail.com",
     "license": "MIT",

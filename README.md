@@ -1,4 +1,4 @@
-# internet-available
+# is-app-online
 
 A javascript module to check the internet connectivity periodically to control the flow of app and restrict crashing of application.
 
